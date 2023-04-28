@@ -64,7 +64,7 @@ class CreateBooking extends Component {
     axios
       .get(url1)
       .then((response) => {
-        console.log(response.data);
+        console.log("response", response.data);
         this.setState({ flightIds: response.data, errorMessage: "" });
       })
       .catch((error) => {
